@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Products Website</div>
+        <ul class="nav-links">
+          <li><a href="todo.html">To-do List</a></li>
+          <li><a href="product.html">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Product Listing</h1>
+
+      <!-- Filter & Sort Options -->
+      <div class="filters">
+        <div class="filter-category">
+          <label for="category">Category:</label>
+          <select id="category">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home</option>
+          </select>
+        </div>
+
+        <div class="filter-price">
+          <label for="price">Max Price:</label>
+          <input type="number" id="price" placeholder="Enter max price" />
+        </div>
+
+        <div class="sort-rating">
+          <label for="sort">Sort By:</label>
+          <select id="sort">
+            <option value="default">Default</option>
+            <option value="low-to-high">Price: Low to High</option>
+            <option value="high-to-low">Price: High to Low</option>
+            <option value="rating">Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="product-grid"></div>
+    </div>
+
+    <script src="product.js"></script>
+  </body>
+</html>
